@@ -1,6 +1,13 @@
 const base = "../projects/"
 projects = [
     {
+        "title": "FPGA RFID Utility",
+        "description": "An FPGA-based RFID reader/spoofer.",
+        "link": base + "fpga-rfid/",
+        "tags": ["Coursework"],
+        "thumbnail":""
+    },
+    {
         "title": "Laser Engraved Keychains",
         "description": "Easy customization with a laser cutter.",
         "link": base + "keychains/",
