@@ -3,11 +3,11 @@ var headers = ['Home', 'About', 'Projects', 'Resume', 'Blog', 'Contact'];
 const baseURL = "http://milesdai.github.io/"
 var links = {
     "Home": '',
-    "About": 'about/index.html',
-    "Projects": 'projects/index.html',
-    "Resume": 'resume/index.html',
-    "Blog": 'blog/index.html',
-    "Contact": 'contact/index.html'
+    "About": 'about/',
+    "Projects": 'projects/',
+    "Resume": 'resume/',
+    "Blog": 'blog/',
+    "Contact": 'contact/'
 };
 
 var nav = document.getElementById('navbar');

@@ -3,82 +3,82 @@ projects = [
     {
         "title": "Laser Engraved Keychains",
         "description": "Easy customization with a laser cutter.",
-        "link": base + "keychains/index.html",
+        "link": base + "keychains/",
         "tags": ["DIY"],
         "thumbnail": "keychains/keychains_2.jpg"
     },
     {
         "title": "VU Meter",
         "description": "A volume indicator powered by an Attiny 26. Created for Next Make as a soldering activity for prefrosh at MIT.",
-        "link": base + "vumeter/index.html",
+        "link": base + "vumeter/",
         "tags": ["Next Make", "PCB Design"]
     },
     {
         "title": "RFID Lab",
         "description": "An investigation into RFID entry control systems. This work was done as part of designing a lab for MIT's 6.002 course.",
-        "link": base + "rfid/index.html",
+        "link": base + "rfid/",
         "tags": ["Coursework"],
         "thumbnail": "rfid/modulation2.png"
     },
     {
         "title": "Induction Heater",
         "description": "Final project for 6.1311 Power Electronics Lab. An inverter driving a work coil produces contactless heating.",
-        "link": base + "inductionheater/index.html",
+        "link": base + "inductionheater/",
         "tags": ["Power Electronics", "Coursework"],
         "thumbnail": "inductionheater/inductionHeaterSetup.jpg"
     },
     {
         "title": "Schlieren Imaging",
         "description": "Exploration of different methods for visualizing turbulence using Schlieren techniques.",
-        "link": base + "schlieren/index.html",
+        "link": base + "schlieren/",
         "tags": ["Coursework"],
         "thumbnail": "schlieren/solderingIron.JPG"
     },
     {
         "title": "Fountain of Youth",
         "description": "A demonstration of the stroboscopic effect using an oscillating stream of water. Created with Next Make.",
-        "link": base + "fountainofyouth/index.html",
+        "link": base + "fountainofyouth/",
         "tags": ["Next Make"]
     },
     {
         "title": "Harry Potter Clock",
         "description": "Recreation of the Weasley family clock that shows the location of each family member using IoT.",
-        "link": base + "hpclock/index.html",
+        "link": base + "hpclock/",
         "tags": ["Hackathon"],
         "thumbnail": "hpclock/clockfront.jpg"
     }, 
     // {
     //     "title": "Boba Machine",
     //     "description": "An automated machine for making boba from tea bags and dried tapioca. Created with Next Make.",
-    //     "link": base + "bobamachine/index.html",
+    //     "link": base + "bobamachine/",
     //     "tags": ["Next Make"],
     //     "thumbnail": "bobamachine/boba.jpg"
     // },
     {
         "title": "Electric Piano",
         "description": "A tunable PCB electric piano designed as a soldering activity for prefrosh at MIT.",
-        "link": base + "electricpiano/index.html",
+        "link": base + "electricpiano/",
         "tags": ["Next Make", "PCB Design"],
         "thumbnail": "electricpiano/pianopcb.jpg"
     },
     {
         "title": "Methyl Salicylate Synthesis",
         "description": "Organic synthesis of Oil of Wintergreen from household materials.",
-        "link": base + "methylsalicylate/index.html",
+        "link": base + "methylsalicylate/",
         "tags": ["Chemistry"],
         "thumbnail": "methylsalicylate/methylsalicylate.jpg"
     },
     {
         "title": "Low Cost Colorimeter",
         "description": "Digital Electronics final project. An off-the-shelf device to measure light absorbance of colored solutions.",
-        "link": base + "colorimeter/index.html",
+        "link": base + "colorimeter/",
         "tags": ["Chemistry", "Coursework"],
         "thumbnail": "colorimeter/colorimeter1.jpg"
     }, 
     {
         "title": "Robot Arm",
         "description": "A leader-follower robot arm for Carmel High School's 2016 Science Olympiad season.",
-        "link": base + "robotarm/index.html",
+        "link": base + "robotarm/",
         "tags": ["Science Olympiad"],
         "thumbnail": "robotarm/lightuprobot.jpg"
     },
@@ -86,7 +86,7 @@ projects = [
     {
         "title": "",
         "description": "",
-        "link": base + /index.html""
+        "link": base + /""
     },*/
 ];
 
