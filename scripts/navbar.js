@@ -1,6 +1,6 @@
 var headers = ['Home', 'About', 'Projects', 'Resume', 'Blog', 'Contact'];
 
-const baseURL = "http://www.mit.edu/~milesdai/"
+const baseURL = "http://milesdai.github.io/"
 var links = {
     "Home": '',
     "About": 'about/index.html',

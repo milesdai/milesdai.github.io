@@ -1,4 +1,4 @@
-const base = "http://www.mit.edu/~milesdai/projects/";
+const base = "../projects/"
 projects = [
     {
         "title": "Laser Engraved Keychains",
