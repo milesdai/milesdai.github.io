@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VU Meter | Miles Dai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous"> -->
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script> -->
+    <!-- KaTeX autorender extension -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script> -->
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/global.css" />
+</head>
+<body>
+    <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation"></nav>
+    <section class="section">
+        <div class="container grid">
+            <h1>VU Meter</h1>
+            <h3>April 2019</h3>
+            <article class="message is-success">
+                <div class="message-header">
+                    Work in Progress
+                </div>
+                <div class="message-body">
+                    This writeup is currently under development. Check back for more updates soon!
+                </div>
+            </article>
+            <p>
+                As part of MIT's Campus Preview Weekend for potential students, I designed a circuit board that students would assemble at an event promoting one of our student groups called Next Make (see the <a href="../electricpiano/index.html">Electric Piano</a> project for more details). This year, we created a board that would measure the audio volume of the room and display it on an LED bar graph.
+            </p>
+            <h2>Existing Solutions</h2>
+            <p>
+                Monolithic solutions exist for this particular type of project, namely the LM3914 and LM3916, which accept an analog voltage and drive an LED bar graph directly. It does this with a flash-ADC-style resistor ladder along with a series of comparators to sense voltage levels. However, with the rise of low-cost microcontrollers, these ICs have been discontinued. In fact, sourcing them is rather expensive and relies on the remaining stashes that people have rather than from the original manufacturer. Thus, we decided to use a microcontroller in lieu of a more packaged solution.
+            </p>
+            <h2>Part Selection</h2>
+            <h3>Microphone</h3>
+            <p>
+                We opted to use a standard electret microphone along with an amplifier to sense the noise levels in the room. The only real parameters we are looking for in this part is cost and size.
+            </p>
+            <h3>Amplifier</h3>
+            <p>
+                The amplitude of the signal from the electret microphone, even after the built-in JFET amplifier, is around 2 mV. Thus we needed approximately a 1000x amplification to produce voltages that the microcontroller could detect. We selected a general-purpose low-power op-amp, namely the LM358, to perform the amplification. We purposely selected a dual op-amp in anticipation of creating a cascading amplifier for better bandwidth. As explained later, we eventually found this to be unnecessary.
+            </p>
+            <h3>LED Bar Graph</h3>
+            <p>
+                An LTA-1000HR red, 10-segment LED Bar Graph was selected as the display.
+            </p>
+            <h2>Circuit</h2>
+            <p>
+                The circuit consisted of a microphone feeding into an inverting amplifier. This signal is read by the Attiny which controls the LED bar graph. The Attiny also had the programming pins broken out to 6 test points on the board to use the chip's ISP feature.
+            </p>
+            <h2>Code</h2>
+            <p>
+                The code polls the ADC periodically to sense the amplitude of the sound. While this does not provide the actual amplitude, it is sufficient for a basic product like this one. The full source code can be found on <a href="https://github.com/Next-Make/CPW2019">Github</a>.
+            </p>
+        </div>
+    </section>
+    <script src="../../scripts/navbar.js"></script>
+</body>
+</html>

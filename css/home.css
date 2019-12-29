@@ -1,0 +1,34 @@
+#call-to-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 6em;
+    max-width: 100%;
+}
+
+#homepage-arrow {
+    margin-left: 3px; 
+    margin-top: 1px; 
+    font-size: 12pt;
+}
+
+.button {
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.17s linear 0s;
+}
+
+#blurb {
+    margin-top: 3em;
+}
+
+.greeting {
+    font-size: 5rem;
+    line-height: 80px;
+}
+
+p {
+    margin: 0;
+}
+
+.section {
+    padding-top: 5em;
+}

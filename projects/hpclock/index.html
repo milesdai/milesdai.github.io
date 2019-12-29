@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harry Potter Clock | Miles Dai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous"> -->
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script> -->
+    <!-- KaTeX autorender extension -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/global.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/projects.css" />
+</head>
+<body>
+    <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation"></nav>
+    <section class="section">
+        <div class="container grid">
+            <h1>Weasley Family Clock</h1>
+            <h3>Spring 2018</h3>
+
+            <h2>Background</h2>
+            <p>
+                For MakeMIT 2018, my team and I decided to recreate the Weasley Family clock from Harry Potter. In the movies, there is a clock that uses multiple hands to display the location of each person in the family. We endeavored to make this happen using the popular IoT board, the ESP8266.
+            </p>
+
+            <h2>Operation</h2>
+            <p>
+                People are able to update their locations through a web app that uses MIT Kerberos authentication to identify the user. This is sent to a server that is polled by the ESP8266. When someone updates their position, the board will move the servo to the correct position. Gearing on the back of the board was required to step up the angular range of the servos to the full 360 degrees.
+            </p>
+
+            <a href="clockfront.jpg" class="center">
+                <img src="clockfront.jpg" alt="Clock face" class="responsive narrow-picture">
+            </a>
+            <div class="caption">Clock face: each circle belongs to a person, and the symbols represent the location of each individual.</div>
+
+            <a href="clockback.jpg" class="center">
+                <img src="clockback.jpg" alt="Clock face" class="responsive narrow-picture">
+            </a>
+            <div class="caption">The gearing system for the servos and the ESP8266 mounted to the back.</div>
+
+        </div>
+    </section>
+    <script src="../../scripts/navbar.js"></script>
+</body>
+</html>

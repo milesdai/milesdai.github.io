@@ -1,0 +1,11 @@
+.tile {
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    display: inline-block;
+    margin: 6px;
+}
+
+.tile.on {
+    background-color: red;
+}

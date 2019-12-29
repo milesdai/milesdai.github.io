@@ -1,0 +1,10 @@
+#headshot {
+    margin: 1em;
+}
+
+.image {
+    height: 40%;
+    width: 40%;
+    min-height: 100px;
+    min-width: 100px;
+}
