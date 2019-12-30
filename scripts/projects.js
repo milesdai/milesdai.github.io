@@ -5,7 +5,7 @@ projects = [
         "description": "An FPGA-based RFID reader/spoofer.",
         "link": base + "fpga-rfid/",
         "tags": ["Coursework"],
-        "thumbnail":""
+        "thumbnail":"fpga-rfid/readerSetup.jpg"
     },
     {
         "title": "Laser Engraved Keychains",
