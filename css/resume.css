@@ -14,6 +14,11 @@ hr {
 
 h2 {
     margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.level.degree-level {
+    margin-bottom: 0;
 }
 
 .header .level {
