@@ -54,6 +54,8 @@ sidebar_home_link:  true
 # disqus:
 #   shortname:     none
 
-# google_analytics: none
+# Google Analytics overridden with custom include file. This variable should
+#   just be commented out if analytics need to be turned off.
+google_analytics: enabled
 
 remote_theme: fongandrew/hydeout
