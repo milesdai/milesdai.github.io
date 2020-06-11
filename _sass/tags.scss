@@ -1,0 +1,8 @@
+.tags-list a .tag-count {
+  // background: ;
+  border-radius: 6px;
+}
+
+.posts-for-tag:target {
+  animation: posts-for-tag-fade-in 0.4s ease-in-out;
+}
