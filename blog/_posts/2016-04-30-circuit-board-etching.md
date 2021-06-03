@@ -1,6 +1,7 @@
 ---
 title: Circuit Board Etching
 layout: post
+katex: true
 thumbnail: /assets/img/pcb-etch/pcbEtch3.jpg
 tags:
   - PCB Design
@@ -19,9 +20,7 @@ If you want a single custom PCB, it might make more sense to etch your own board
 
 ## Procedure
 
-<p class="message">
-  <b>Warning:</b> Etching PCBs involves corrosive chemicals and generates chemical waste. Protective equipment is necessary, and a waste disposal procedure must be in place. The etching solution cannot be poured down the drain.
-</p>
+{% include warning.html content="Etching PCBs involves corrosive chemicals and generates chemical waste. Protective equipment is necessary, and a waste disposal procedure must be in place. The etching solution cannot be poured down the drain." %}
 
 The PCB was created using the toner transfer method. There are more in-depth tutorials for this online, but basically, the pads and traces are printed onto a glossy paper. This pattern is transferred using an iron on to copper clad board. The toner serves as a mask that protects the copper underneath from being attacked by the etchant. The areas where the toner did not fully transfer were filled in with white-out which we found worked best at preventing unintended etching.
 
