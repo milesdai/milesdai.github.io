@@ -1,0 +1,17 @@
+/* Override Bulma to prevent images from stretching and recenter them */
+.image.is-5by3 .thumbnail-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+h2.title {
+    margin-bottom: 0;
+}
+
+p.subtitle {
+    font-size: 1em;
+    font-style: italic;
+}

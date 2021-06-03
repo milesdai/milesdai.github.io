@@ -1,0 +1,41 @@
+/* img {
+    max-width: 75%;
+    height: auto;
+} */
+
+.tile .is-child {
+    margin: 0.75rem;
+}
+
+.box {
+    transition: box-shadow .2s;
+}
+
+.box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.title {
+    margin-top: 0;
+}
+
+a.center {
+    margin: 0.5em;
+}
+
+.caption {
+    text-align: center;
+    font-size: 12pt;
+    color: #555555;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.thumbnail {
+    margin: 1em;
+}
+
+.thumbnail > img{
+    max-height: 15em;
+    object-fit: scale-down;
+}

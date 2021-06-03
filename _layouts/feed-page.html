@@ -1,0 +1,19 @@
+<!-- feed_page.html is a layout for pages that aggregates posts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include global-header.html %}
+    <link rel="stylesheet" href="/assets/css/feed-page.css">
+</head>
+<body>
+    {% include navbar.html %}
+    <section class="section is-medium">
+        <div class="content">
+            <div class="container grid">
+                <h1 class="is-size-1 has-text-weight-semibold">{{ page.title }}</h1>
+                {{ content }}
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,43 +1,44 @@
-# TODO
+# TODOs
 
-* Re-style projects page
-* Implement related posts
-* Google Analytics
+## Projects
 
-### HTML to MD conversion
+* [Clickable cards](https://css-tricks.com/block-links-the-search-for-a-perfect-solution/#method-4-sprinkle-javascript-on-the-second-method) without wrapping the entire card in an anchor tag
+* Get thumbnails for all images
 
-1. Change CRLF to LF
-2. href link replacement
-3. image replacement
-4. Caption replacement
-5. header replacement
+## Research
 
-href link replacement:
-```
-Find:     <a href="([^"]+)"[^>]*>([^<]+)</a>
-Replace:  [$2]($1)
-```
+* Figure out how to link each article
 
-img replacement:
-```
-Find:   <a href="[^"]+" class="center">\n*<img src="([^"]+)" alt="([^"]+)"[^>]*>\n*</a>
-Replace: ![$2](/assets/img/colorimeter/$1)
-```
+## Blogs
 
-fix headers:
-```
-find:     \n*<h3>([^<]+)</h3>\n*
-replace:  \n\n### $1\n\n
-```
+* Implement tags
+* Pagination
+* Give everything a blurb
+* Add thumbnails to blog posts
 
-fix captions:
-```
-find:     <div class="caption">[\n ]*([^\n<]+)[ \n]*</div>
-replace:  *$1*
-```
+## Miscellaneous
 
-clean up spacing:
-```
-find: \n[\n]+
-replace: \n\n
-```
+* 404 page formatting
+* Favicon
+* Switch to Sass?
+* Change photos to jpg
+* Custom url
+* Make photos clickable
+* Check accessibilty on site
+* Use less invasive tracker than Google Analytics
+
+### Images
+
+* Handles tall images
+* Use captions correctly
+* Generate alt-text for thumbnails
+
+## Posts to Write
+
+* Research
+  * EngageME
+  * Auxbots
+  * NoC Sec
+* Networks project
+* About the site
+* Next Haunt
