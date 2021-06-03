@@ -3,6 +3,13 @@ title: Blog
 layout: feed-page
 ---
 
+<div class="section">
+    <p>
+        These are smaller projects and events that did not quite warrant a full write-up but are interesting enough to present nonetheless.
+    </p>
+</div>
+<hr>
+
 {% for category in site.categories %}
     {% if category[0] == "blog" %}
         {% for post in category[1] %}
