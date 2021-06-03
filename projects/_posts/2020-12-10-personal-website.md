@@ -2,7 +2,7 @@
 layout: post
 title: Personal Website
 thumbnail: /assets/img/personal-site/custom-theme.jpg
-excerpt: The gorey details behind the construction of my personal website -- the one you are reading at this moment!
+excerpt: The gory details behind the construction of my personal website -- the one you are reading at this moment!
 category:
   - Projects
 tags:
