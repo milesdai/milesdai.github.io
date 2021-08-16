@@ -127,9 +127,7 @@ Additionally, a phase difference is noticeable when the heater approaches resona
 
 Once the circuit was confirmed to be safe and working, more power was added by increasing the voltage at the top of the totem pole. This allowed for objects to be heated to very high temperatures.
 
-<p class="message">
-  <b>Warning:</b> This section involves high voltages and high temperatures. Do not attempt this without a thorough understanding of the system and of electrical safety principles.
-</p>
+{% include warning.html content="This section involves high voltages and high temperatures. Do not attempt this without a thorough understanding of the system and of electrical safety principles." %}
 
 Using the large coil, a metal heatsink was heated by raising the voltage until 1A of current flowed through the inverter. The heatsink was placed flat on top of the coil. Figure 10 shows the temperature of the heatsink.
 
