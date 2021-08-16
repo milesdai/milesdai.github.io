@@ -3,6 +3,7 @@ layout: post
 title: Low Cost Colorimeter
 thumbnail: /assets/img/colorimeter/colorimeter1.jpg
 excerpt: A colorimeter is a device that measures the absorbance at a particular wavelength of a solution. In this project, I build one using cheap, off-the-shelf components.
+katex: true
 category:
   - Projects
 tags:
