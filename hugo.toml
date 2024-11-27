@@ -1,0 +1,51 @@
+baseURL = "https://milesdai.com/"
+languageCode = "en-us"
+title = "Miles Dai"
+theme = "coder"
+
+pluralizeListTitles = false
+
+[markup]
+  lineBreaks = false
+
+[markup.highlight]
+  style = "github-dark"
+
+[params]
+  author = "Miles Dai"
+  description = "Miles's personal website"
+  avatarurl = "profile.png"
+  since = 2018
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+################################################################################
+# Menu Items
+################################################################################
+
+[[menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+
+[[menu.main]]
+  name = "Research"
+  weight = 2
+  url = "research/"
+
+################################################################################
+# Social Media Icons
+################################################################################
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/milesdai/"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 1
+  url = "https://www.linkedin.com/in/milesdai/"
