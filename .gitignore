@@ -1,14 +1,12 @@
 .DS_Store
-TODO.md
 
-# Ignore Jekyll metadata
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+################################################################################
+# Hugo
+################################################################################
 
-_drafts/
+# Generated files
+/public/
+/resources/_gen/
 
-# Ignore Bundler files
-.bundle/
-vendor/
+# Temporary lock file while building
+/.hugo_build.lock
