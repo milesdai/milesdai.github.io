@@ -44,6 +44,11 @@ pluralizeListTitles = false
   weight = 2
   url = "research/"
 
+[[menu.main]]
+  name = "Projects"
+  weight = 3
+  url = "projects/"
+
 ################################################################################
 # Social Media Icons
 ################################################################################
