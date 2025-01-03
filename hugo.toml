@@ -11,6 +11,14 @@ pluralizeListTitles = false
 [markup.highlight]
   style = "github-dark"
 
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+  enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+  block = [['\[', '\]'], ['$$', '$$']]
+  inline = [['\(', '\)']]
+
 [params]
   author = "Miles Dai"
   description = "Miles's personal website"
@@ -19,6 +27,8 @@ pluralizeListTitles = false
 
   colorScheme = "auto"
   hidecolorschemetoggle = false
+
+  math = true
 
 ################################################################################
 # Menu Items
