@@ -19,6 +19,9 @@ pluralizeListTitles = false
   block = [['\[', '\]'], ['$$', '$$']]
   inline = [['\(', '\)']]
 
+[pagination]
+pagerSize = 20
+
 [params]
   author = "Miles Dai"
   description = "Miles's personal website"
